@@ -1,7 +1,6 @@
 const http=require("http");
 
 const server=http.createServer((req,res)=>{
-    console.log(req.url);
     if(req.url=="/"){
         res.end("<h1>hi, this is mukesh from home page</h1>");
     }
