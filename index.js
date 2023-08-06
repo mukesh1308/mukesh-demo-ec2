@@ -12,6 +12,10 @@ const server=http.createServer((req,res)=>{
     }
 });
 
+server.on("error",(e)=>{
+    console.log(e);
+})
+
 server.listen("800",()=>{
     console.log("post 800");
 })
