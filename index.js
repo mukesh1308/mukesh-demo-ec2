@@ -1,6 +1,7 @@
 const http=require("http");
 
 const server=http.createServer((req,res)=>{
+    console.log(req.url);
     if(req.url=="/"){
         res.end("<h1>hi, this is mukesh from home page</h1>");
     }
@@ -17,5 +18,5 @@ server.on("error",(e)=>{
 })
 
 server.listen("8000",()=>{
-    console.log("post 800");
+    console.log("post 8000");
 })
